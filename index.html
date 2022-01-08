@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+        </div>
+        <div class="add-task">
+            <input id="new-task-input" type="text" placeholder="Write your task here">
+            <button class="add-task-btn">ADD TASK</button>
+        </div>
+        <div class="task-list-header">
+            <h2><i class="fas fa-tasks"> Tasks</i></h2>
+            <button class="remove-complete-btn">Clear</button>
+        </div>
+        <div class="task-list-wrapper">
+            <ul class="task-list"></ul>
+        </div>
+    </div>
+    <template id="task-template">
+        <li class="task">
+            <input type="checkbox"/>
+            <label>
+                <span class="check-mark">&#10004</span>
+                <span class="custom-checkbox"></span>
+            </label>
+        </li>
+    </template>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
